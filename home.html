@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgetown College Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Campus Events This Week</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Attend?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="empty" colspan="5">No events yet</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Submit a New Event</h2>
+    <form action="#" method="POST">
+        <label for="name">Event Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter event name" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location" required>
+
+        <button type="submit">Submit Event</button>
+    </form>
+     <div id="bottom-nav">
+        <button onclick="location.href='clubs.html'">Clubs</button>
+        <button onclick="location.href='news.html'">News</button>
+        <button onclick="location.href='schedule.html'">My Schedule</button>
+    </div>
+</body>
+</html>

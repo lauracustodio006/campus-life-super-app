@@ -1,0 +1,119 @@
+ul {list-style-type: none;}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-image: url("images/tiger_pattern.webp");
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+}
+
+.calendar-container {
+  width: 500px;        
+  margin: 0 auto;    
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #dd8a16;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  gap: 10px;              
+  justify-items: center;  
+  align-items: center;    
+  box-sizing: border-box;
+}
+
+.weekdays li {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  margin: 0;
+  padding: 20px 0;
+  background: #eee;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;              
+  justify-items: center;
+  box-sizing: border-box;
+}
+
+.days li {
+  width: 60px;
+  height: 80px; /* a bit taller to fit events */
+  display: flex;
+  flex-direction: column; /* stack day number + events vertically */
+  align-items: center;
+  justify-content: flex-start; /* start at the top */
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+  padding-top: 5px; /* space at the top for the day number */
+  box-sizing: border-box;
+}
+
+.event {
+    padding: 1px 4px;
+    margin-top: 2px;
+    border-radius: 4px;
+    font-size: 10px;
+    color: #fff;
+    width: 90%; /* fit inside the day box */
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.category-homework { background-color: #ff6347; }    
+.category-school-event { background-color: #1e90ff; } 
+.category-quiz-test { background-color: #ffa500; }     
+.category-sport-event { background-color: #32cd32; }  
