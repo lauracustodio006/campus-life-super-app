@@ -1,4 +1,4 @@
-const apiKey = "1f6954b76a2d45418650bf712cb10909"; // Your API key
+const apiKey = "1f6954b76a2d45418650bf712cb10909"; 
 const newsList = document.getElementById("news-list");
 
 async function fetchUSANews() {
@@ -7,9 +7,7 @@ async function fetchUSANews() {
       `https://newsapi.org/v2/top-headlines?country=us&pageSize=5&apiKey=${apiKey}`
     );
     const data = await response.json();
-
     newsList.innerHTML = ""; 
-
     data.articles.forEach(article => {
       const li = document.createElement("li");
       li.classList.add("club-card"); 
