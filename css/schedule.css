@@ -1,11 +1,14 @@
 ul {list-style-type: none;}
 
 body {
-    font-family: Verdana, sans-serif;
-    background-image: url("images/tiger_pattern.webp");
-    background-size: cover;       
-    background-repeat: no-repeat; 
-    background-position: center;  
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url('../images/tiger_patern.jpg'); 
+    background-size: cover;      
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    color: white;
 }
 
 .calendar-container {
@@ -20,14 +23,9 @@ body {
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #dd8a16;
   text-align: center;
 }
 
-.month ul {
-  margin: 0;
-  padding: 0;
-}
 
 .month ul li {
   color: white;
@@ -49,8 +47,6 @@ body {
 .weekdays {
   margin: 0;
   padding: 10px 0;
-  background-color: #ddd;
-
   display: grid;
   grid-template-columns: repeat(7, 1fr); 
   gap: 10px;              
@@ -65,7 +61,7 @@ body {
   padding: 8px 0;
   text-align: center;
   font-weight: 600;
-  color: #666;
+  color: #ffffff;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -75,8 +71,6 @@ body {
 .days {
   margin: 0;
   padding: 20px 0;
-  background: #eee;
-
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;              
@@ -86,17 +80,17 @@ body {
 
 .days li {
   width: 60px;
-  height: 80px; /* a bit taller to fit events */
+  height: 80px; 
   display: flex;
-  flex-direction: column; /* stack day number + events vertically */
+  flex-direction: column; 
   align-items: center;
-  justify-content: flex-start; /* start at the top */
+  justify-content: flex-start;
   background: #fff;
   border-radius: 6px;
   border: 1px solid #ddd;
   font-size: 18px;
-  color: #333;
-  padding-top: 5px; /* space at the top for the day number */
+  color: #000000;
+  padding-top: 5px; 
   box-sizing: border-box;
 }
 
@@ -106,7 +100,7 @@ body {
     border-radius: 4px;
     font-size: 10px;
     color: #fff;
-    width: 90%; /* fit inside the day box */
+    width: 90%; 
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
