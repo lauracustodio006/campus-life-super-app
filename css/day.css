@@ -1,34 +1,40 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: rgb(255, 228, 199);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
 
 h1 {
     margin-bottom: 10px;
+    color: orange;          
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    background: rgba(0, 0, 0, 0.5);  
+    padding: 15px;
+    border-radius: 8px;
 }
 
 li {
     padding: 5px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.category-homework {
-    color: blue;
-}
 
-.category-school-event {
-    color: green;
-}
-
-.category-quiz-test {
-    color: orange;
-}
-
-.category-sport-event {
-    color: red;
+#bottom-nav button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #ffffff;
+    transition: background-color 0.3s; 
 }

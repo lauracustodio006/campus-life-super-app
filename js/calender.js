@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     addButton.addEventListener('click', () => {
-        let day = parseInt(prompt("Enter the day (1-30):"));
+        let day = parseInt(prompt("Enter the day:"));
         if (!day || day < 1 || day > 30) return alert("Invalid day!");
 
-        let time = prompt("Enter the time (e.g., 14:00):");
+        let time = prompt("Enter the time (military time):");
         if (!time) return alert("Time is required!");
 
         let category = prompt("Enter category (homework, school event, quiz/test, sport event):").toLowerCase();
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         let name = prompt("Enter the event/class name:");
-        if (!name || !name.trim()) return alert("Event name is required!");
+        if (!name || !name.trim()) return alert("Event/class name is required!");
 
         const dayEl = document.getElementById(`day-${day}`);
         if (!dayEl) return alert("Day element not found!");
